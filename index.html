@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-color: #0f0f0f;
+      background-color: #0a0a0a;
       color: #e0e0e0;
       font-family: 'Georgia', serif;
       text-align: center;
       padding: 5vh 2rem;
+      background-image: radial-gradient(ellipse at center, #1a1a1a 0%, #000 100%);
     }
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+      text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
     }
     #main-content {
       display: none;
@@ -45,6 +47,11 @@
     a.gift-link:hover {
       color: #fff;
     }
+    .counter {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: #888;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(2rem); }
       to { opacity: 1; transform: translateY(0); }
@@ -52,14 +59,15 @@
   </style>
 </head>
 <body>
-  <h1>── お前は選ばれし者か？ ──</h1>
+  <h1>── 汝は選ばれし者か？ ──</h1>
   <button class="button" onclick="showGift()">YES</button>
   <button class="button" onclick="alert('…資格がないようだな。')">NO</button>
 
   <div id="main-content">
-    <p>なら、お前にだけこの贈り物を許そう。</p>
+    <p>── その魂に刻め。これは堕天の福音 ──</p>
     <a class="gift-link" href="https://open-up.asoview-gift.com/gift-code/DT6765NW38584V4Z/card/fb3c60fb-a1da-4568-b4c1-e868c9da8bdb" target="_blank">🎁 贈り物を受け取る</a>
     <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.7;">※このリンクは一度しか開けない……かもしれない。</p>
+    <p class="counter">現在のアクセスナンバー：777</p>
   </div>
 
   <script>
